@@ -1,23 +1,23 @@
-body{
-    background-color: white;
-    color: black;
+body {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.hamburger {
-    display: inline-block; /* Para que ocupe apenas o espaço necessário */
-    cursor: pointer;
+.header {
+  background-color: rgb(13, 48, 13);
+  color: white;
+  font-size: 30px;
+  font-family: "Pirata One", cursive;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
 }
 
-.bar {
-    width: 30px;
-    height: 4px;
-    background-color: #333;
-    margin: 6px 0;
-    display: block; /* Para que cada barra fique em uma linha */
-    transition: 0.3s; /* Para futuras animações */
-}
-
-.rodapé{
+.footer{
     background-color: darkgreen;
     color: white;
     font-size: 20px;
