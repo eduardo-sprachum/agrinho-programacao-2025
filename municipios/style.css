@@ -1,1 +1,58 @@
-body{}
+.municipios {
+  padding: 50px 30px;
+  background-color: #f5f5f5;
+}
+
+.municipios h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #0d3013;
+}
+
+.municipio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.municipio p {
+  flex: 1;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.municipio-img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.esquerda {
+  order: 0;
+}
+
+.direita {
+  order: 1;
+}
+
+@media (max-width: 768px) {
+  .municipio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .municipio-img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .municipio p {
+    text-align: justify;
+  }
+}
