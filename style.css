@@ -105,13 +105,13 @@ body {
   color: white;
   font-size: 18px;
   display: flex;
-  justify-content: flex-start; /* alinha à esquerda */
+  justify-content: flex-start;
   align-items: center;
   padding: 20px 30px;
-  gap: 15px; /* espaçamento entre o texto e o ícone */
+  gap: 15px;
 }
 
 .rodape-icone {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
