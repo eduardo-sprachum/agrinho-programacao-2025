@@ -1,140 +1,117 @@
-/* Corpo e texto base */
 body {
   background-color: white;
   color: black;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0 20px 50px 20px; /* espaçamento geral */
-  line-height: 1.5;
-  text-align: justify; /* texto geral justificado */
+  padding: 0;
 }
 
-/* Cabeçalho */
 .header {
-  background-color: rgb(13, 48, 13);
+  background-color: #0d3013;
   color: white;
-  font-family: "Pirata One", cursive;
-  font-size: 30px;
+  padding: 20px 30px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* centraliza o conteúdo principal */
   align-items: center;
-  padding: 10px 30px;
+  text-align: center;
 }
 
-/* Título cabeçalho */
 .cabecalho-titulo {
-  margin: 0;
+  font-size: 28px;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: bold;
 }
 
-/* Menu no cabeçalho */
-.menu ul {
+.menu {
+  position: absolute;
+  left: 30px; /* encosta no lado direito */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-lista {
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
-  gap: 20px;
 }
 
-.menu li {
+.menu-item {
   position: relative;
+  display: inline-block;
 }
 
-.menu a {
-  color: white;
+.menu-item > a {
   text-decoration: none;
-  font-size: 18px;
-  padding: 8px 12px;
+  color: white;
+  padding: 10px 15px;
   display: block;
 }
 
-/* Dropdown */
-.menu li:hover > ul.dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
+.submenu {
   display: none;
   position: absolute;
-  background-color: rgb(13, 48, 13);
-  top: 100%;
-  left: 0;
-  min-width: 160px;
-  z-index: 100;
+  background-color: #0d3013;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
-  border-radius: 0 0 4px 4px;
+  z-index: 999;
 }
 
-.dropdown-menu li a {
-  padding: 8px 12px;
-  font-size: 16px;
-}
-
-.dropdown-menu li a:hover {
-  background-color: rgb(0, 100, 0);
-}
-
-/* Seção Municípios */
-#municipios {
-  max-width: 900px;
-  margin: 40px auto;
-}
-
-/* Título "Municípios" */
-#municipios h1 {
-  text-align: center;
-  font-size: 32px;
-  color: rgb(13, 48, 13);
-  margin-bottom: 40px;
-}
-
-/* Cada bloco de município */
-.municipio {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  gap: 30px;
-}
-
-/* Alternar a posição da imagem/texto */
-.municipio:nth-child(odd) {
-  flex-direction: row;
-}
-
-.municipio:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-/* Texto do município */
-.municipio p {
-  flex: 1;
-  font-size: 16px;
-  text-align: justify;
-  margin: 0;
-}
-
-/* Imagem município */
-.municipio img {
-  width: 300px;
-  max-width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* Rodapé */
-.footer {
-  background-color: rgb(13, 48, 13);
+.submenu li a {
   color: white;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 30px;
-  justify-content: flex-start;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.mapa-pr {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin: 20px auto;
+}
+
+.frase-destaque {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.sobre {
+  padding: 30px;
+}
+
+.sobre-titulo {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.sobre-texto {
+  text-align: justify;
+  line-height: 1.6;
   font-size: 18px;
+}
+
+.footer {
+  background-color: #0d3013;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 15px;
 }
 
 .rodape-icone {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
