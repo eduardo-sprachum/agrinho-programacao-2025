@@ -1,51 +1,54 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Corpo e texto base */
 body {
   background-color: white;
-  color: #000;
+  color: black;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  padding-bottom: 50px;
+  margin: 0;
+  padding: 0 20px 50px 20px; /* espaçamento geral */
+  line-height: 1.5;
+  text-align: justify; /* texto geral justificado */
 }
 
 /* Cabeçalho */
 .header {
   background-color: rgb(13, 48, 13);
   color: white;
+  font-family: "Pirata One", cursive;
+  font-size: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  flex-wrap: wrap;
+  padding: 10px 30px;
 }
 
+/* Título cabeçalho */
 .cabecalho-titulo {
-  font-size: 28px;
-  font-family: "Pirata One", cursive;
+  margin: 0;
 }
 
-/* Menu */
+/* Menu no cabeçalho */
 .menu ul {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
   gap: 20px;
-  position: relative;
 }
 
-.menu ul li {
+.menu li {
   position: relative;
 }
 
 .menu a {
-  text-decoration: none;
   color: white;
-  font-size: 16px;
-  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  display: block;
+}
+
+/* Dropdown */
+.menu li:hover > ul.dropdown-menu {
   display: block;
 }
 
@@ -55,65 +58,68 @@ body {
   background-color: rgb(13, 48, 13);
   top: 100%;
   left: 0;
-  min-width: 150px;
-  z-index: 1000;
-  flex-direction: column;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: flex;
+  min-width: 160px;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 0 0 4px 4px;
 }
 
 .dropdown-menu li a {
-  padding: 10px;
-  border-top: 1px solid #444;
+  padding: 8px 12px;
+  font-size: 16px;
 }
 
-/* Título da seção */
-.municipios h1 {
-  font-size: 32px;
+.dropdown-menu li a:hover {
+  background-color: rgb(0, 100, 0);
+}
+
+/* Seção Municípios */
+#municipios {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Título "Municípios" */
+#municipios h1 {
   text-align: center;
-  margin: 40px 0 20px;
+  font-size: 32px;
   color: rgb(13, 48, 13);
-}
-
-/* Bloco de município */
-.bloco {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.municipio {
   margin-bottom: 40px;
 }
 
-.municipio p {
-  flex: 1;
-  text-align: justify;
-  font-size: 16px;
-  max-width: 600px;
+/* Cada bloco de município */
+.municipio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 30px;
 }
 
-.municipio-img {
-  width: 300px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+/* Alternar a posição da imagem/texto */
+.municipio:nth-child(odd) {
+  flex-direction: row;
 }
 
-/* Alternando lado das imagens */
 .municipio:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.municipio:nth-child(odd) {
-  flex-direction: row;
+/* Texto do município */
+.municipio p {
+  flex: 1;
+  font-size: 16px;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Imagem município */
+.municipio img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 /* Rodapé */
@@ -122,19 +128,13 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  padding: 20px 40px;
   gap: 10px;
+  padding: 15px 30px;
   justify-content: flex-start;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  font-size: 18px;
 }
 
 .rodape-icone {
   width: 24px;
   height: 24px;
-}
-
-.rodape-titulo {
-  font-size: 16px;
 }
