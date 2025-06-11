@@ -103,10 +103,9 @@ body {
 
 /* Texto do município */
 .municipio p {
-  flex: 1;
-  font-size: 16px;
   text-align: justify;
-  margin: 0;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 /* Imagem município */
