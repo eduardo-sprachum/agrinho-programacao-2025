@@ -1,28 +1,110 @@
 body {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: white;
+  color: black;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .header {
-  background-color: rgb(13, 48, 13);
+  background-color: #0d3013;
   color: white;
-  font-size: 30px;
-  font-family: "Pirata One", cursive;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer{
-    background-color: rgb(13, 48, 13);
-    color: black
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-    align-items: center;
-  }
+.cabecalho-titulo {
+  font-size: 28px;
+  margin: 0;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #0d3013;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+
+.submenu li a {
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.mapa-pr {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.frase-destaque {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.sobre {
+  padding: 30px;
+}
+
+.sobre-titulo {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.sobre-texto {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.footer {
+  background-color: #0d3013;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.rodape-icone {
+  width: 32px;
+  height: 32px;
+}
