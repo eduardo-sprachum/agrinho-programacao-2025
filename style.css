@@ -9,20 +9,26 @@ body {
 .header {
   background-color: #0d3013;
   color: white;
-  padding: 15px 30px;
+  padding: 20px 30px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* centraliza o conteúdo principal */
   align-items: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .cabecalho-titulo {
   font-size: 28px;
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
+  font-weight: bold;
 }
 
 .menu {
-  position: relative;
+  position: absolute;
+  right: 30px; /* encosta no lado direito */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .menu-lista {
