@@ -75,6 +75,8 @@ body {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Título "Municípios" */
