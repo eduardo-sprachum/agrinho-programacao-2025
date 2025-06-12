@@ -2,7 +2,7 @@ body {
   background-color: white;
   color: black;
   font-family: Arial, sans-serif;
-  margin: 40px;
+  margin: 0;
   padding: 0;
 }
 
@@ -15,8 +15,6 @@ body {
   justify-content: center; /* centraliza o conteúdo principal */
   align-items: center;
   text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
 .cabecalho-titulo {
