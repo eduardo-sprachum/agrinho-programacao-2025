@@ -78,7 +78,7 @@ body {
 }
 
 /* Título "Municípios" */
-h1 {
+#municipios h1 {
   text-align: center;
   font-size: 32px;
   color: rgb(13, 48, 13);
