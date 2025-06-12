@@ -144,3 +144,10 @@ body {
   width: 32px;
   height: 32px;
 }
+
+.descricao-imagem {
+  font-size: 10px;
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
