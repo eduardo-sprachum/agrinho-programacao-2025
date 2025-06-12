@@ -80,6 +80,7 @@ body {
 /* Título "Municípios" */
 #municipios h1 {
   text-align: center;
+  align-items: center;
   font-size: 32px;
   color: rgb(13, 48, 13);
   margin-bottom: 40px;
