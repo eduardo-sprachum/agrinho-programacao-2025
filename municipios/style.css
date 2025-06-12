@@ -100,6 +100,35 @@ body {
   font-size: 18px;
 }
 
+.municipio {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 30px;
+}
+
+.municipio-img {
+  width: 300px; /* ou ajuste conforme seu layout */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.municipio-img.esquerda {
+  order: 0;
+}
+
+.municipio-img.direita {
+  order: 1;
+}
+
+.municipio.bloco p {
+  flex: 1;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 .footer {
   background-color: #0d3013;
   color: white;
