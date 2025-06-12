@@ -71,55 +71,33 @@ body {
   display: block;
 }
 
-#municipios {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+.mapa-pr {
+  display: block;
+  max-width: 60%;
+  height: auto;
+  margin: 20px auto;
 }
 
-/* Título "Municípios" */
-#municipios h1 {
+.frase-destaque {
   text-align: center;
-  align-items: center;
-  font-size: 32px;
-  color: rgb(13, 48, 13);
-  margin-bottom: 40px;
-  margin-left: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px;
 }
 
-#municipios {
-  max-width: 900px;
-  margin-left: 40px auto;
+.sobre {
+  padding: 30px;
 }
 
-/* Cada bloco de município */
-.municipio {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-  gap: 30px;
+.sobre-titulo {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-.municipio:nth-child(odd) {
-  flex-direction: row;
-}
-
-.municipio:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.municipio p {
+.sobre-texto {
   text-align: justify;
   line-height: 1.6;
   font-size: 18px;
-}
-
-/* Imagem município */
-.municipio img {
-  width: 300px;
-  max-width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
 }
 
 .footer {
