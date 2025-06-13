@@ -156,14 +156,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  padding: 20px;
+  gap: 40px 50px; /* espaçamento entre linhas e colunas */
+  padding: 40px 20px;
 }
 
 .flashcard {
   width: 300px;
   height: 400px;
   perspective: 1000px;
+  margin: 10px; /* espaçamento extra entre os cartões */
 }
 
 .card-inner {
