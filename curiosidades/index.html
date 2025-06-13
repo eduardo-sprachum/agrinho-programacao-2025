@@ -141,6 +141,40 @@
     </section>
   </main>
 
+  <div id="acessibilidade-controles" style="position: fixed; bottom: 80px; left: 10px; z-index: 1000; background: #0d3013; color: white; padding: 10px; border-radius: 8px;">
+  <button onclick="aumentarFonte()">A+</button>
+  <button onclick="diminuirFonte()">A-</button>
+  <button onclick="lerPagina()">🔊 Ler</button>
+</div>
+
+<script>
+  let tamanhoFonte = 1;
+
+  function aumentarFonte() {
+    if (tamanhoFonte < 1.8) {
+      tamanhoFonte += 0.1;
+      document.body.style.fontSize = tamanhoFonte + "em";
+    }
+  }
+
+  function diminuirFonte() {
+    if (tamanhoFonte > 0.8) {
+      tamanhoFonte -= 0.1;
+      document.body.style.fontSize = tamanhoFonte + "em";
+    }
+  }
+
+  function lerPagina() {
+    const texto = document.body.innerText;
+    const sintetizador = window.speechSynthesis;
+    const fala = new SpeechSynthesisUtterance(texto);
+    fala.lang = 'pt-BR';
+    sintetizador.cancel(); // Cancela qualquer leitura anterior
+    sintetizador.speak(fala);
+  }
+</script>
+
+
     <footer class="footer">
     <a href="https://www.instagram.com/eduardo_sprachum/">
         <img class="rodape-icone" src="/img/image 2.png"alt="instagram">
