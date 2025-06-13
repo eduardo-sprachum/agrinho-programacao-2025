@@ -170,19 +170,3 @@ body {
 .footer {
   margin-top: 50px;
 }
-
-#acessibilidade-controles button {
-  font-size: 16px;
-  margin: 5px;
-  padding: 6px 10px;
-  background-color: white;
-  color: #0d3013;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#acessibilidade-controles button:hover {
-  background-color: #e0e0e0;
-}
