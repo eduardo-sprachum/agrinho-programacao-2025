@@ -125,7 +125,7 @@ body {
 }
 
 .flashcard {
-  width: 280px;
+  width: 90%;
   height: 180px;
   perspective: 1000px;
 }
